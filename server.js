@@ -3,8 +3,8 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var logger = require("morgan");
 var mongoose = require("mongoose");
-// Bring in our Models: Not and User
-var Note = require("./models/Note.js");
+// Bring in our Models: Article and User
+var Note = require("./models/Article.js");
 var User = require("./models/User.js");
 // Set mongoose to leverage built in JavaScript ES6 Promises
 mongoose.Promise = Promise;
@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 // Database configuration with mongoose
-mongoose.connect("mongodb://localhost/week18Populater");
+mongoose.connect("mongodb://localhost/newswebscraper");
 var db = mongoose.connection;
 
 // Show any mongoose errors
