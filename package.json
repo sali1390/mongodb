@@ -1,0 +1,28 @@
+{
+  "name": "news-web-scraper",
+  "version": "1.0.0",
+  "description": "Web Scraper Node app to scrape a website and use this data to enable a user to save articles.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sali1390/mongodb.git"
+  },
+  "author": "Saleema Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sali1390/mongodb/issues"
+  },
+  "homepage": "https://github.com/sali1390/mongodb#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "cheerio": "^0.22.0",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.8.5",
+    "request": "^2.79.0"
+  }
+}

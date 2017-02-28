@@ -1,11 +1,15 @@
 // Dependencies
 var express = require("express");
-var bodyParser = require("body-parser");
-var logger = require("morgan");
+var handlebars = requie("express-handlebars")
 var mongoose = require("mongoose");
+var bodyParser = require("body-parser");
+var cheerio = require("cheerio)
+var request = require("request")
+
 // Bring in our Models: Article and User
 var Note = require("./models/Article.js");
 var User = require("./models/User.js");
+
 // Set mongoose to leverage built in JavaScript ES6 Promises
 mongoose.Promise = Promise;
 
