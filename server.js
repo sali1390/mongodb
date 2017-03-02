@@ -9,7 +9,7 @@ var request = require("request");
 var logger = ("morgan");
 
 // Bring in our Models: Article and User
-//var Note = require("./models/Article.js");
+var Article = require("./models/Article.js");
 //var User = require("./models/User.js");
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
@@ -84,14 +84,36 @@ function getPost(url){
             );
 
             count++;
-            console.log(count);
 
             if (count === 20){
-                console.log(results);
                 return(results)
             }
         });
     });
 }
 
-getPost('https://www.buzzfeed.com/');
+app.get('/scraped', function(req, res){
+    console.log(req.body)
+})
+
+app.post('/scraped', function(req, res){
+
+    console.log("it works")
+
+    //var article = new Article(req.body)
+    //
+    //user.save(function(error, doc) {
+    //    // Send any errors to the browser
+    //    if (error) {
+    //        res.send(error);
+    //    }
+    //    // Otherwise, send the new doc to the browser
+    //    else {
+    //        res.send(doc);
+    //    }
+    //});
+});
+
+//function postPosts(){
+//
+//};

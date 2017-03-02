@@ -7,23 +7,23 @@ var Schema = mongoose.Schema;
 //Instantiate a new Article schema class
 var ArticleSchema = new Schema({
     title: {
-        type: string,
+        type: String,
         required: true
     },
     teaser: {
-        type: string,
+        type: String,
         required: true
     },
     image: {
-        type: string,
+        type: String,
         required: true
     },
     link: {
-        type: string,
+        type: String,
         required: true
     },
     timePosted: {
-        type: string,
+        type: String,
         required: true
     }
 });
