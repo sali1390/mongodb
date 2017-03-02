@@ -1,0 +1,17 @@
+.centered {
+    text-align:center;
+}
+
+.navbar, .nav, .navbar-nav {
+    /*height: 80px;*/
+    margin: 0;
+}
+
+.noArticles {
+    text-align: center;
+    background: coral;
+    padding: 20px;
+    color: white;
+    font-size: 28px;
+    line-height: 28px;
+}
